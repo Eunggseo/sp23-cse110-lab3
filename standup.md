@@ -11,6 +11,4 @@
 - [ ] Task 3
 
 ## What issues are blocking me?
-- None
-
-
+- None.
