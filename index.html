@@ -1,7 +1,3 @@
-/* This is a comment in external CSS file /
-/ Author: Wenyu Zhong /
-/ Date: Apr 23 2023 */
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +5,30 @@
      and specifies the title of your webpage, which is displayed 
      in the title bar or tab of the browser.-->
     <title>Meeting Minutes</title>
+    <style>
+      /* Default styles for the element */
+    .example-element {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+    /* Media query for screen width less than or equal to 768px */
+    @media (max-width: 768px) {
+      .example-element {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+    body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* Use the desired font name in your CSS styles */
+   }
+    </style>
+
     <!--The <meta> elements are also placed inside the <head> 
       used to provide additional information about your webpage, 
       such as the description of your website for search engines,
@@ -16,6 +36,12 @@
     <meta name="description" content="This is a website for exploring the basics of HTML ">
     <!--favicon setting-->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <section id="MeetingMinutes" style="border-style: solid; border-width: 2px; border-color: #ff0000;">
+      <h2 style="font-size: 1.5em; margin-top: 0; margin-bottom: 1em;">Meeting Minutes</h2>
+      <hr style="border: 0; border-top: 1px solid #333;">
+      <!-- Add content related to meeting minutes here -->
+    </section>
+    
   </head>
   <body>
     <header>
@@ -43,8 +69,11 @@
     </nav>
 
     <main>
-      <section id="brainstorming">
-        <h2>Brainstorming</h2><hr>
+      <section id="Brainstorming" style="border-style: solid; border-width: 2px; border-color: #00ff00;">
+        <section id="Brainstorming">
+        <h2 style="color: #ff0000; text-decoration: underline; text-align: center;">Brainstorming</h2>
+        <p style="color: #333; text-decoration: none; text-align: left;"a.</p>
+        <hr style="border: 0; border-top: 1px solid #333;">   
         <p>This is a paragraph with some <span>generic inline content</span> using the &lt;span&gt; tag.</p>
         <p>This is a <b>bold text</b> example.</p>
         <p>This is an example of <strong>important text</strong> that needs emphasis.</p>
@@ -54,46 +83,95 @@
        
         
       <div style="width: 50%; height: 10em; margin-top: 2em; background-color: #5c3c92; color: #ffffff;">
-        <h2>Agenda Items</h2>
+        <section id="AgendaItems" style="border-style: solid; border-width: 5px; border-color: #0000ff;">
+          <h2 style="font-size: 1.5em; margin-top: 0; margin-bottom: 1em;">Agenda Items</h2>
+          <hr style="border: 0; border-top: 1px solid #333;">
+        </section>
+        
         <ul>
-          <li>Agenda item 1</li>
-          <li>Agenda item 2</li>
-          <li>Agenda item 3</li>
+          <li style="height: 50px; width: 100px; background-color: #f00; color: #fff;">Agenda item 1</li>
+          <li style="max-width: 200px; background-color: #0f0; color: #000;">Agenda item 2</li>
+          <li style="min-width: 150px; background-color: #00f; color: #fff;">Agenda item 3</li>
         </ul>
+        
       </div>
+      <section id="AgendaItems">
+        <h2 style="color: #0000ff; text-decoration: line-through; text-align: right;">Agenda Items</h2>
+        <p style="color: #666; text-decoration: none; text-align: center;"></p>
+      </section>
       
-      <section id="Attendance" style="background-color: #f8c291; color: #ffffff; padding: 1em;">
-        <h2 style="font-size: 1.5em;">Attendance</h2>
-        <hr style="border: 0; border-top: 1px solid #ffffff;">
+      <section id="Attendance" style="border-style: solid; border-width: 2px; border-color: #ff00ff; border-radius: 10px;">
+        <h2 style="color: #ff00ff; text-decoration: underline; text-align: center;">Attendance</h2>
+        <h2 style="font-size: 1.5em; margin-top: 0; margin-bottom: 1em;">Attendance</h2>
+        <hr style="border: 0; border-top: 1px solid #333;">
+     
         <ul style="list-style: none; padding: 0;">
           <li style="font-size: 1.2em;">Mike</li>
           <li style="font-size: 1.2em;">Lisa</li>
           <li style="font-size: 1.2em;">Catherine</li>
-          <!-- Add additional list items for attendance here -->
+          <a href="#" style="color: blue;">Link 1</a>
+          <a href="#" style="color: red;">Link 2</a>
+          <button style="background-color: green; color: white;">Click me</button>
         </ul>
       </section>
       <div style="width: 30vw; height: 20%; margin-top: 1rem; background-color: #d1cfcf; color: #000000;">
         <h2>Discussion Points</h2>
         <ul>
-          <li>Discussion point 1</li>
-          <li>Discussion point 2</li>
-          <li>Discussion point 3</li>
-        </ul>
+          <li style="position: static;">Discussion point 1</li>
+          <li style="position: relative;">Discussion point 2</li>
+          <li style="position: fixed;">Discussion point 3</li>
+        </ul>        
       </div>
       <div style="width: 500px; height: 300px; font-size: 18px; padding-left: 2rem; background-color: #aec6cf; color: #000000;">
         <h2>Meeting Conclusion</h2>
         <p>Summary of decisions made, next steps, and conclusion of the meeting.</p>
       </div>
       
-      <section id="Documentations">
+      <section id="Documents" style="background-color: #f3e8ee; padding: 1em;">
+        <h2 style="font-size: 1.5em; margin-top: 0; margin-bottom: 1em;">Documents</h2>
+        <hr style="border: 0; border-top: 1px solid #333;">
+        <ul style="list-style: none; padding: 0;">
+          <li style="font-size: 1.2em; padding-top: 1em; padding-bottom: 1em; padding-left: 0.5em; padding-right: 0.5em;">Document 1</li>
+          <li style="font-size: 1.2em; padding: 1em;">Document 2</li>
+          <li style="font-size: 1.2em; padding: 1em;">Document 3</li>
+          
+        </ul>
         <h2>Documentations</h2><hr>
           <h3>- audio recording the meeting </h3>
            <audio src="audio.mp3" controls></audio>
-       
+           <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 10px;">
+            <div style="background-color: red;">Meeting 1</div>
+            <div style="background-color: green;">Meeting 2</div>
+            <div style="background-color: blue;">Meeting 3</div>
+            <div style="background-color: yellow;">Meeting 4</div>
+            <div style="background-color: pink;">Meeting 5</div>
+          </div>
           <h3>- video recording the meeting</h3>
           <video src="video.mp4" controls></video>
-
       </section>
+      <section id="BlockDisplay">
+        <h2 style="display: block; color: #000;">Block Display</h2>
+        <p style="display: block; color: #666;">meeting notes.</p>
+      </section>
+      
+      <section id="InlineBlockDisplay">
+        <h2 style="display: inline-block; color: #00f;">Inline-Block Display</h2>
+        <p style="display: inline-block; color: #999;">meeting notes.</p>
+      </section>
+      
+      <section id="InlineDisplay">
+        <h2 style="display: inline; color: #f00;">Inline Display</h2>
+        <p style="display: inline; color: #666;">meeting notes.</p>
+      </section>
+      
+      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <div style="flex: 1; padding: 10px; background-color: red;">Before Meeting</div>
+        <div style="flex: 2; padding: 10px; background-color: green;">During</div>
+        <div style="flex: 1; padding: 10px; background-color: blue;">After</div>
+      </div>
+      
+      
+     
     <footer>
 
     </footer>
