@@ -1,1 +1,1 @@
-# [Lab 2 - Link](https://eunggseo.github.io/Lab2_Starter/)
+# [Lab 3 - Link](https://eunggseo.github.io/sp23-cse110-lab3)
